@@ -5,6 +5,8 @@ const mockAPIResponse = require('./mockAPI.js');
 const ailientendpoint = 'https://api.aylien.com/news';
 dotenv.config();
 
+console.log(process.env.API_ID);
+
 const app = express();
 
 app.use(express.static('dist'));

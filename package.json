@@ -1,24 +1,26 @@
 {
-  "name": "udacity-news-nlp",
   "version": "1.0.0",
+  "name": "udacity-news-nlp",
+  "author": "Alvear Candia, Cristopher Alejandro <calvear93@gmail.com>",
+  "description": "Fourth Udacity's Frontend Web Developer Nanodegree project",
   "main": "index.js",
-  "scripts": {
-    "start": "node src/server/index.js",
-    "build-prod": "webpack --config webpack.prod.js",
-    "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
-  },
+  "license": "MIT",
   "keywords": [
     "udacity",
     "nlp",
     "frontend",
     "nanodegree"
   ],
-  "author": "Alvear Candia, Cristopher Alejandro <calvear93@gmail.com>",
-  "license": "MIT",
-  "description": "Fourth Udacity's Frontend Web Developer Nanodegree project",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "build-dev": "webpack-dev-server  --config webpack.dev.js --open",
+    "build-prod": "webpack --config webpack.prod.js",
+    "lint:analyze": "eslint --ext .js,.jsx src/",
+    "lint:fix": "eslint --fix --ext .js,.jsx src/"
+  },
   "dependencies": {
     "aylien_textapi": "^0.7.0",
-    "env-cmd": "^10.1.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2"
@@ -38,8 +40,13 @@
     "jest": "^27.0.4",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^5.0.0",
+    "prettier-stylelint": "^0.4.2",
     "sass-loader": "^12.1.0",
     "style-loader": "^2.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
