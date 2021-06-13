@@ -1,9 +1,10 @@
+const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/client/index.js',
     mode: 'development',
+    entry: path.resolve(__dirname, 'src/client/index.js'),
     devtool: 'source-map',
     stats: 'verbose',
     module: {
@@ -14,14 +15,14 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
-                test: /\.scss$/,
+                test: /\.s[ac]ss$/,
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ]
             }
         ]
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: './src/client/views/index.html',
+            template: path.resolve(__dirname, 'src/client/views/index.html'),
             filename: './index.html'
         }),
         new CleanWebpackPlugin({
