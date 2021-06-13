@@ -13,10 +13,10 @@
   ],
   "scripts": {
     "start": "node src/server/index.js",
-    "build-dev": "webpack-dev-server  --config webpack.dev.js --open",
+    "build-dev": "webpack serve  --config webpack.dev.js --open",
     "build-prod": "webpack --config webpack.prod.js",
-    "lint:analyze": "eslint --ext .js,.jsx src/",
-    "lint:fix": "eslint --fix --ext .js,.jsx src/",
+    "lint:analyze": "eslint --ext .js src/",
+    "lint:fix": "eslint --fix --ext .js, src/",
     "test": "jest"
   },
   "dependencies": {
