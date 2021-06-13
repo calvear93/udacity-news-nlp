@@ -1,0 +1,24 @@
+{
+    "rootDir": "src",
+    "testEnvironment": "node",
+    "moduleDirectories": [
+        "node_modules",
+        "src",
+        "test"
+    ],
+    "moduleFileExtensions": [
+        "js",
+        "json"
+    ],
+    "testRegex": ".*\\.(spec|test)\\.js$",
+    "transform": {
+        "^.+\\.js$": "babel-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "collectCoverageFrom": [
+        "**/*.js"
+    ],
+    "bail": 1,
+    "verbose": true,
+    "slowTestThreshold": 15
+}
