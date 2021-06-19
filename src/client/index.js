@@ -1,3 +1,2 @@
 import './styles/index.scss';
-
-alert('WORKING');
+import './js/main';

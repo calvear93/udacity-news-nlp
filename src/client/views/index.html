@@ -2,29 +2,29 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
-        <title>Test</title>
+        <title>NLP Analyze</title>
     </head>
 
     <body>
         <header>
-            <div class="">
-                Logo
+            <div class="brand">
+                <div class="logo" />
             </div>
-            <div class="">
-                navigation
+            <div class="title">
+                Udacity's NLP project
             </div>
         </header>
 
         <main>
-            <section>
-                <form class="" onsubmit="return handleSubmit(event)">
+            <section class="form">
+                <form onsubmit="return handleSubmit(event)">
                     <input
-                        id="name"
-                        type="text"
+                        id="url"
+                        type="url"
                         name="input"
                         value=""
                         onblur="onBlur()"
-                        placeholder="Name"
+                        placeholder="Paste your article URL"
                     />
                     <input
                         type="submit"
@@ -36,14 +36,10 @@
                 </form>
             </section>
 
-            <section>
+            <section class="results">
                 <strong>Form Results:</strong>
                 <div id="results"></div>
             </section>
         </main>
-
-        <footer>
-            <p>This is a footer</p>
-        </footer>
     </body>
 </html>
