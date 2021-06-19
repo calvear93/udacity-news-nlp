@@ -14,11 +14,13 @@
     "transform": {
         "^.+\\.js$": "babel-jest"
     },
+    "setupFiles": ["dotenv/config"],
     "coverageDirectory": "../coverage",
     "collectCoverageFrom": [
         "**/*.js"
     ],
     "bail": 1,
     "verbose": true,
-    "slowTestThreshold": 15
+    "slowTestThreshold": 30,
+    "testTimeout": 60000
 }
