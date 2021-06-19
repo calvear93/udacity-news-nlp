@@ -33,17 +33,18 @@ Due to Aylien Text API isn't for free access now in 2021, I use [Meaning Cloud A
 Project uses **npm scripts** for eases execution, testing and building.
 Also this is using webpack.
 
-Before executin the project, install npm dependencies with `npm i`.
+Before execute the project, install npm dependencies with `npm i`.
 
-| Command              | Action                                     |
-| -------------------- | ------------------------------------------ |
-| npm start            | starts nodejs server                       |
-| npm run start-dev    | starts nodejs server in debug/watcher mode |
-| npm run build-dev    | starts webpack dev server for web app      |
-| npm run build-prod   | bundle the web app                         |
-| npm run lint-analyze | executes linter analysis                   |
-| npm run lint-fix     | executes linter analysis and autofix       |
-| npm run test         | executes jest unit tests                   |
+| Command                 | Action                                     |
+| ----------------------- | ------------------------------------------ |
+| npm start               | starts nodejs server                       |
+| npm run start-dev       | starts nodejs server in debug/watcher mode |
+| npm run build-dev       | starts webpack dev server for web app      |
+| npm run build-prod      | bundle the web app                         |
+| npm run lint-analyze    | executes linter analysis                   |
+| npm run lint-fix        | executes linter analysis and autofix       |
+| npm run test            | executes jest unit tests                   |
+| npm run build-and-start | builds the web app and executes the server |
 
 So, you can get an api key in [Meaning Cloud API](https://www.meaningcloud.com/).
 
