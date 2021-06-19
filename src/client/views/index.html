@@ -17,19 +17,18 @@
 
         <main>
             <section class="form">
-                <form onsubmit="return handleSubmit(event)">
+                <form id="form" onsubmit="return handleSubmit(event)">
                     <input
                         id="url"
                         type="url"
                         name="input"
-                        value=""
-                        onblur="onBlur()"
                         placeholder="Paste your article URL"
                     />
                     <input
+                        id="submitter"
                         type="submit"
-                        name=""
-                        value="submit"
+                        value="Submit"
+                        disabled
                         onclick="return handleSubmit(event)"
                         onsubmit="return handleSubmit(event)"
                     />
