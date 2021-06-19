@@ -1,6 +1,6 @@
 {
     "rootDir": "src",
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "moduleDirectories": [
         "node_modules",
         "src"
@@ -9,7 +9,7 @@
         "js",
         "json"
     ],
-    "testRegex": "src/server/.*\\.(spec|test)\\.js$",
+    "testRegex": "src/client/.*\\.(spec|test)\\.js$",
     "transform": {
         "^.+\\.js$": "babel-jest"
     },

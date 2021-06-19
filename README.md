@@ -43,7 +43,8 @@ Before execute the project, install npm dependencies with `npm i`.
 | npm run build-prod      | bundle the web app                         |
 | npm run lint-analyze    | executes linter analysis                   |
 | npm run lint-fix        | executes linter analysis and autofix       |
-| npm run test            | executes jest unit tests                   |
+| npm run test-server     | executes jest unit tests for server        |
+| npm run test-client     | executes jest unit tests for web app       |
 | npm run build-and-start | builds the web app and executes the server |
 
 So, you can get an api key in [Meaning Cloud API](https://www.meaningcloud.com/).
