@@ -30,6 +30,10 @@ async function handleSubmit(e)
 
         return false;
     }
+    catch
+    {
+        alert('An horror has ocurred!');
+    }
     finally
     {
         submitter.classList.remove('loading');

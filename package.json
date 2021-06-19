@@ -13,11 +13,11 @@
   ],
   "scripts": {
     "start": "babel-node src/server/index.js",
-    "start:dev": "nodemon --exec babel-node src/server/index.js",
+    "start-dev": "nodemon --exec babel-node src/server/index.js",
     "build-dev": "webpack serve  --config webpack.dev.js --open",
     "build-prod": "webpack --config webpack.prod.js",
-    "lint:analyze": "eslint --ext .js src/",
-    "lint:fix": "eslint --fix --ext .js, src/",
+    "lint-analyze": "eslint --ext .js src/",
+    "lint-fix": "eslint --fix --ext .js, src/",
     "test": "jest"
   },
   "dependencies": {

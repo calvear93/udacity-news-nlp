@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -35,6 +36,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin(),
+        new WorkboxPlugin.GenerateSW(),
         new HtmlWebPackPlugin({
             template: path.resolve(__dirname, 'src/client/views/index.html'),
             filename: './index.html'

@@ -7,7 +7,7 @@ describe('NLP Form Route', () =>
         let result;
 
         await exec(
-            { query: { url: 'https://www.sciencedaily.com/releases/2021/06/210607161000.htm' } },
+            { body: { url: 'https://www.sciencedaily.com/releases/2021/06/210607161000.htm' } },
             { send: (r) => { result = r; } }
         );
 
