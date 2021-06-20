@@ -21,15 +21,15 @@ function createResultsElement({ agreement, irony, analysis })
 
     // updates content
     agreementEle.id = 'agreement';
-    agreementEle.textContent = agreement;
+    agreementEle.innerHTML = `Agreement: ${agreement}`;
     ironyEle.id = 'irony';
-    ironyEle.textContent = irony;
+    ironyEle.innerHTML = `Irony: ${irony}`;
     keywords.id = 'analysis';
 
     for (let phrase of analysis)
     {
         let phraseInfo = document.createElement('li');
-        phraseInfo.innerHTML = `<b>${phrase.agreement}</b> -> ${phrase.text}}`;
+        phraseInfo.innerHTML = `<b>${phrase.agreement}</b> -> ${phrase.text}`;
 
         let defs = document.createElement('ul');
 

@@ -32,7 +32,7 @@ describe('Show Results in Page', () =>
         const agreementHTMLElement = document.getElementById('agreement');
         const ironyHTMLElement = document.getElementById('irony');
 
-        expect(agreementHTMLElement.innerHTML).toEqual(results.agreement);
-        expect(ironyHTMLElement.innerHTML).toEqual(results.irony);
+        expect(agreementHTMLElement.innerHTML).toEqual(`Agreement: ${results.agreement}}`);
+        expect(ironyHTMLElement.innerHTML).toEqual(`Irony: ${results.irony}}`);
     });
 });
